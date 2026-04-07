@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Dont touch</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<div id="introScreen" class="intro-screen">
+    <img id="introGif" src="gif/gif1.gif" alt="Mở thiệp" class="intro-gif">
+    <div class="intro-hint">ẤN VÀO NÀOO</div>
+</div>
+<div id="mainContent" class="main-content">
+<div class="birthday-outside">🎂 Chúc mừng sinh nhật 🎂</div>
+<button id="musicBtn" class="music-btn" aria-label="Bật nhạc">🔊</button>
+<div class="card" id="birthdayCard">
+
+    <!-- MẶT 2 -->
+    <div class="card-side side2 hidden-side photo-side" id="side2">
+        <div class="photo-frame">
+            <!-- ảnh -->
+            <img class="photo-slide active" src="photo/photo1.jpg" alt="Kỷ niệm 1" data-caption="1">
+            <img class="photo-slide" src="photo/photo2.jpg" alt="Kỷ niệm 2" data-caption="2">
+            <img class="photo-slide" src="photo/photo3.jpg" alt="Kỷ niệm 3" data-caption="3">
+            <img class="photo-slide" src="photo/photo3.jpg" alt="Kỷ niệm 3" data-caption="3">
+            <img class="photo-slide" src="photo/photo3.jpg" alt="Kỷ niệm 3" data-caption="3">
+            <img class="photo-slide" src="photo/photo3.jpg" alt="Kỷ niệm 3" data-caption="con chó ngu súc vật dũng đần, hiển thất tình">
+        </div>
+        <div class="photo-caption" id="photoCaption">📸 Những khoảnh khắc yêu thương</div>
+        <!-- <div class="photo-dots" id="photoDots"></div>
+        <div class="photo-hint">MEMORIES WITH U</div> -->
+        <button class="mini-flip" id="miniFlip" aria-label="Lật thiệp">🌸</button>
+    </div>
+
+
+    <!-- MẶT 1 -->
+    <div class="card-side side1" id="side1">
+        <div class="split-two-halves">
+            <!-- Nửa trái -->
+            <div class="half-left">
+                <div class="img-wish">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,88.5 C50,88.5 12,58.5 12,35 C12,21 22,12 34,12 C42,12 48,18 50,24 C52,18 58,12 66,12 C78,12 88,21 88,35 C88,58.5 50,88.5 50,88.5Z" fill="#ff4d6d" stroke="#ffb3c1" stroke-width="2"/>
+                        <path d="M50,82 C50,82 20,56 20,36 C20,26 28,20 36,20 C42,20 46,24 50,30 C54,24 58,20 64,20 C72,20 80,26 80,36 C80,56 50,82 50,82Z" fill="#ff8aa5" stroke="none"/>
+                        <circle cx="38" cy="38" r="3" fill="white" fill-opacity="0.6"/>
+                        <circle cx="62" cy="38" r="3" fill="white" fill-opacity="0.6"/>
+                    </svg>
+
+
+                </div>
+                <div class="wish-text">💖 Chúc mừng sinh nhật 💖</div>
+                <div class="sub-message">"Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y Cúc Tịnh Y"</div>
+            </div>
+            <!-- Nửa phải -->
+            <div class="half-right">
+                <div class="img-wish">
+                    <!-- Hình ảnh bông hồng tình yêu -->
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,70 C50,70 30,48 30,34 C30,24 38,18 46,18 C52,18 56,23 58,28 C60,23 64,18 70,18 C78,18 86,24 86,34 C86,48 66,70 50,70Z" fill="#e8435e" stroke="#ffb3b3"/>
+                        <path d="M50,65 C50,65 35,46 35,35 C35,27 41,22 47,22 C52,22 55,26 57,31 C59,26 62,22 67,22 C73,22 79,27 79,35 C79,46 64,65 50,65Z" fill="#ff5e7e"/>
+                        <ellipse cx="40" cy="40" rx="2.5" ry="3.5" fill="white" fill-opacity="0.7"/>
+                        <ellipse cx="60" cy="40" rx="2.5" ry="3.5" fill="white" fill-opacity="0.7"/>
+                        <path d="M50,70 L48,84 L52,84 L50,70Z" fill="#7a3e25"/>
+                        <path d="M44,80 L50,84 L56,80 L50,86 L44,80Z" fill="#5a2e1a"/>
+                    </svg>
+                </div>
+                <div class="wish-text">💗 Gâu gâu 💗</div>
+                <div class="sub-message">"ĂN CỨT ĐI ĐỪNG CÓ ĂN CỨT ĂN CỨT ĐI ĐỪNG ĂN CỨT ĂN CỨT ĐI ĐỪNG ĂN CỨT ĂN THÊM ĂN TIẾP CỨT ĐỪNG ĂN THÊM"</div>
+            </div>
+        </div>
+        <!-- TRÁI TIM LƠ LỬNG chính giữa  -->
+        <button class="floating-heart" id="flipHeart" aria-label="Lật thiệp">
+            <canvas id="heartCanvas" width="140" height="140"></canvas>
+        </button>
+    </div>
+
+    
+</div>
+
+<audio id="bgMusic" loop preload="auto" playsinline>
+    <source src="music/Music.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script>
+    (function() {
+        // Lấy các element
+        const side1 = document.getElementById('side1');
+        const side2 = document.getElementById('side2');
+        const flipBtn = document.getElementById('flipHeart');
+        const miniFlip = document.getElementById('miniFlip');
+
+        // Trạng thái hiện tại
+        let isSide1Active = true;
+
+        // Hàm cập nhật giao diện 2 mặt
+        function toggleCardSide() {
+            if (isSide1Active) {
+                // chuyển sang mặt 2
+                side1.classList.add('hidden-side');
+                side1.classList.remove('visible-side');
+                side2.classList.remove('hidden-side');
+                side2.classList.add('visible-side');
+                // thay đổi hiệu ứng nút (tuỳ chỉnh thêm xoay nhẹ)
+                flipBtn.style.transform = "translate(-50%, -50%) rotate(180deg)";
+                setTimeout(() => {
+                    flipBtn.style.transform = "translate(-50%, -50%) rotate(0deg)";
+                }, 200);
+                // có thể đổi icon nút (giữ nguyên)
+            } else {
+                // chuyển về mặt 1
+                side2.classList.add('hidden-side');
+                side2.classList.remove('visible-side');
+                side1.classList.remove('hidden-side');
+                side1.classList.add('visible-side');
+                flipBtn.style.transform = "translate(-50%, -50%) rotate(-180deg)";
+                setTimeout(() => {
+                    flipBtn.style.transform = "translate(-50%, -50%) rotate(0deg)";
+                }, 200);
+            }
+            isSide1Active = !isSide1Active;
+        }
+
+        // GÁN
+        flipBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleCardSide();
+            // thêm rung
+            flipBtn.style.animation = 'none';
+            setTimeout(() => {
+                flipBtn.style.animation = '';
+            }, 10);
+        });
+
+        if (miniFlip) {
+            miniFlip.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleCardSide();
+            });
+        }
+
+        // Khởi tạo trạng thái ban đầu: hiển thị mặt 1 (có trái tim lơ lửng và 2 nửa)
+        side2.classList.add('visible-side');
+        side2.classList.remove('hidden-side');
+        side1.classList.add('hidden-side');
+        side1.classList.remove('visible-side');
+        isSide1Active = false;
+
+
+        // SLIDESHOW ẢNH TỰ ĐỘNG (mỗi 3 giây)
+        const slides = Array.from(document.querySelectorAll('.photo-slide'));
+        const dotsContainer = document.getElementById('photoDots');
+        const captionEl = document.getElementById('photoCaption');
+        let currentSlide = 0;
+
+        const renderDots = () => {
+            if (!dotsContainer) return;
+            dotsContainer.innerHTML = '';
+            slides.forEach((_, idx) => {
+                const dot = document.createElement('span');
+                dot.className = 'photo-dot' + (idx === currentSlide ? ' active' : '');
+                dotsContainer.appendChild(dot);
+            });
+        };
+
+        const showSlide = (idx) => {
+            if (!slides.length) return;
+            slides[currentSlide].classList.remove('active');
+            currentSlide = idx;
+            slides[currentSlide].classList.add('active');
+            renderDots();
+            updateCaption();
+        };
+
+        const updateCaption = () => {
+            if (!captionEl || !slides.length) return;
+            const cap = slides[currentSlide].getAttribute('data-caption') || slides[currentSlide].alt || '';
+            captionEl.textContent = cap;
+        };
+
+        if (slides.length > 0) {
+            renderDots();
+            updateCaption();
+            if (slides.length > 1) {
+                setInterval(() => {
+                    const next = (currentSlide + 1) % slides.length;
+                    showSlide(next);
+                }, 3000);
+            }
+        }
+
+
+        // CANVAS TRÁI TIM HẠT
+        const initHeartCanvas = () => {
+            const canvas = document.getElementById('heartCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const w = canvas.width;
+            const h = canvas.height;
+            const cx = w / 2;
+            const cy = h / 2 + 6;
+
+            const points = [];
+            const ringCount = 1050;  // hạt viền
+            const fillCount = 450;   // hạt trong tim
+
+            const heartPoint = (t) => {
+                const x = 16 * Math.pow(Math.sin(t), 3);
+                const y = 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t);
+                return { x, y };
+            };
+
+            // viền dày bằng hạt tim con
+            for (let i = 0; i < ringCount; i++) {
+                const t = Math.random() * Math.PI * 2;
+                const p = heartPoint(t);
+                const thickness = 0.92 + Math.random() * 0.22;
+                const jitter = 0.5 + Math.random() * 0.8;
+                const r = 2.2 + Math.random() * 2.2;
+                points.push({ x: p.x, y: p.y, t, th: thickness, j: jitter, r, a: 0.6 + Math.random() * 0.4, type: 'ring' });
+            }
+
+            // hạt bên trong 
+            for (let i = 0; i < fillCount; i++) {
+                const t = Math.random() * Math.PI * 2;
+                const p = heartPoint(t);
+                const s = 0.35 + Math.random() * 0.45; // vào trong
+                const r = 1.2 + Math.random() * 1.6;
+                points.push({ x: p.x, y: p.y, t, th: s, j: 0.2 + Math.random() * 0.5, r, a: 0.35 + Math.random() * 0.35, type: 'fill' });
+            }
+
+            const drawTinyHeart = (x, y, size, alpha) => {
+                ctx.save();
+                ctx.translate(x, y);
+                ctx.scale(size / 10, size / 10);
+                ctx.beginPath();
+                ctx.moveTo(0, 3);
+                ctx.bezierCurveTo(0, -4, -7, -4, -7, 1);
+                ctx.bezierCurveTo(-7, 6, 0, 8, 0, 12);
+                ctx.bezierCurveTo(0, 8, 7, 6, 7, 1);
+                ctx.bezierCurveTo(7, -4, 0, -4, 0, 3);
+                ctx.closePath();
+                ctx.fillStyle = `rgba(255, 85, 165, ${alpha.toFixed(3)})`;
+                ctx.fill();
+                ctx.restore();
+            };
+
+            let start = performance.now();
+            const draw = (time) => {
+                const t = (time - start) / 1000;
+                const beat = 1 + 0.08 * Math.sin(t * 6.0) + 0.04 * Math.sin(t * 12.0);
+
+                ctx.clearRect(0, 0, w, h);
+
+                // halo glow
+                const grad = ctx.createRadialGradient(cx, cy, 8, cx, cy, 66);
+                grad.addColorStop(0, 'rgba(255, 170, 210, 0)');
+                grad.addColorStop(0.6, 'rgba(255, 120, 200, 0)');
+                grad.addColorStop(1, 'rgba(120, 80, 255, 0)');
+                ctx.fillStyle = grad;
+                ctx.beginPath();
+                ctx.arc(cx, cy, 66, 0, Math.PI * 2);
+                ctx.fill();
+
+                for (const p of points) {
+                    const wobble = Math.sin(t * 2 + p.t) * p.j;
+                    const px = cx + p.x * 3.0 * p.th * beat + wobble;
+                    const py = cy - p.y * 3.0 * p.th * beat + wobble;
+                    const alpha = p.a * (0.7 + 0.3 * Math.sin(t * 2.5 + p.t));
+                    drawTinyHeart(px, py, p.r, alpha);
+                }
+
+                requestAnimationFrame(draw);
+            };
+
+            requestAnimationFrame(draw);
+        };
+        initHeartCanvas();
+
+        // mobile
+        const resizeFix = () => {
+            let maxH = window.innerHeight * 0.75;
+            let card = document.querySelector('.card');
+            if(card) {
+                if(card.clientHeight > maxH) {
+                    card.style.maxHeight = maxH + 'px';
+                } else {
+                    card.style.maxHeight = '70vh';
+                }
+            }
+        };
+        window.addEventListener('resize', () => { setTimeout(resizeFix, 50); });
+        resizeFix();
+        
+        console.log("💘 ẤN VÀO 💘");
+
+        // INTRO 1 LẦN: chạm GIF để vào thiệp
+        const initIntroScreen = () => {
+            const intro = document.getElementById('introScreen');
+            const main = document.getElementById('mainContent');
+            const gif = document.getElementById('introGif');
+            if (!intro || !main || !gif) return;
+            main.style.display = 'none';
+            intro.style.display = 'flex';
+
+            const enter = () => {                intro.style.display = 'none';
+                main.style.display = 'block';
+            
+                const audio = document.getElementById('bgMusic');
+                if (audio) {
+                    audio.muted = false;
+                    audio.volume = 1;
+                    audio.load();
+                    audio.play().catch(() => {});
+                }
+            };
+            gif.addEventListener('click', enter);
+            intro.addEventListener('click', enter);
+        };
+        initIntroScreen();
+
+
+        // NHẠC NỀN (cần tương tác người dùng)
+        const initMusicButton = () => {
+            const audio = document.getElementById('bgMusic');
+            const btn = document.getElementById('musicBtn');
+            if (!audio || !btn) return;
+            const tryPlay = () => {
+                audio.muted = false;
+                audio.volume = 1;
+                audio.load();
+                return audio.play();
+            };
+            btn.addEventListener('click', () => {
+                tryPlay().then(() => {
+                    btn.textContent = '🔈';
+                    btn.classList.add('playing');
+                }).catch((err) => {
+                    console.warn('Audio play blocked:', err);
+                    btn.textContent = '❗AGAIN';
+                });
+            });
+        };
+        initMusicButton();
+
+
+        // NHẠC NỀN (tự chạy nếu trình duyệt cho phép)
+        const initMusic = () => {
+            const audio = document.getElementById('bgMusic');
+            if (!audio) return;
+            const tryPlay = () => {
+                audio.play().catch(() => {});
+            };
+            tryPlay();
+            const resume = () => {
+                tryPlay();
+                window.removeEventListener('click', resume);
+                window.removeEventListener('touchstart', resume);
+            };
+            window.addEventListener('click', resume, { once: true });
+            window.addEventListener('touchstart', resume, { once: true });
+        };
+        initMusic();
+
+        // Tự phát sau lần chạm đầu tiên
+        const initMusicAutoTap = () => {
+            const audio = document.getElementById('bgMusic');
+            if (!audio) return;
+            const resume = () => {
+                audio.muted = false;
+                audio.volume = 1;
+                audio.load();
+                audio.play().catch(() => {});
+                window.removeEventListener('click', resume);
+                window.removeEventListener('touchstart', resume);
+            };
+            window.addEventListener('click', resume, { once: true });
+            window.addEventListener('touchstart', resume, { once: true });
+        };
+        initMusicAutoTap();
+
+
+
+    })();
+</script>
+
+
+
+</body>
+</html>
